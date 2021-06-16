@@ -10,19 +10,21 @@ import {
   Link
 } from "react-router-dom";
 
+import logo from './Logo.png';
+
 function App() {
   return (
     <Router>
       <div className="App">
         <nav>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
+            <li id="homeLink">
+              <Link to="/"><img src={logo} alt="logo"></img></Link>
             </li>
-            <li>
+            <li id="historyLink">
               <Link to="/history">01. History</Link>
             </li>
-            <li>
+            <li id="teamLink">
               <Link to="/team">02. Team</Link>
             </li>
           </ul>
